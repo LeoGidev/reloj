@@ -5,35 +5,38 @@
     border-radius: 50%;
     position: relative;
     margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .number {
+  .clock .number {
     position: absolute;
     font-size: 12px;
     font-weight: bold;
-    transform-origin: center;
+    
   }
   
-  .number1 { top: 10px; left: 90px; }
-  .number2 { top: 20px; left: 140px; }
-  .number3 { top: 50px; left: 170px; }
-  .number4 { top: 90px; left: 140px; }
-  .number5 { top: 130px; left: 90px; }
-  .number6 { top: 160px; left: 50px; }
-  .number7 { top: 170px; left: 10px; }
-  .number8 { top: 130px; left: 10px; }
-  .number9 { top: 90px; left: 40px; }
-  .number10 { top: 50px; left: 10px; }
-  .number11 { top: 20px; left: 50px; }
-  .number12 { top: 50px; left: 90px; }
+  .clock .number12 { top: 0%; left: 50%; }
+  .clock .number1 { top: 15.455%; left: 75%; }
+  .clock .number2 { top: 25%; left: 84.545%; }
+  .clock .number3 { top: 50%; left: 100%; }
+  .clock .number4 { top: 75%; left: 84.545%; }
+  .clock .number5 { top: 84.545%; left: 75%; }
+  .clock .number6 { top: 100%; left: 50%; }
+  .clock .number7 { top: 84.545%; left: 25%; }
+  .clock .number8 { top: 75%; left: 15.455%; }
+  .clock .number9 { top: 50%; left: 0%; }
+  .clock .number10 { top: 25%; left: 15.455%; }
+  .clock .number11 { top: 15.455%; left: 25%; }
+
   
-  .clock div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
+  
   
   .hour-hand {
+    position: absolute;
+    top:50%;
+    left: 50%;
     width: 5px;
     height: 50px;
     background-color: black;
@@ -41,6 +44,9 @@
   }
   
   .minute-hand {
+    position: absolute;
+    top:50%;
+    left: 50%;
     width: 3px;
     height: 70px;
     background-color: black;
@@ -48,6 +54,9 @@
   }
   
   .second-hand {
+    position: absolute;
+    top:50%;
+    left: 50%;
     width: 1px;
     height: 80px;
     background-color: red;
@@ -61,5 +70,4 @@
   #days {
     margin-top: 10px;
   }
-  
   
