@@ -7,25 +7,25 @@
     margin: 50px auto;
   }
   
-  .clock .number {
+  .number {
     position: absolute;
     font-size: 12px;
     font-weight: bold;
-    transform-origin: 50% 100%;
+    transform-origin: center;
   }
   
-  .clock .number1 { top: 15px; left: 90px; }
-  .clock .number2 { top: 30px; left: 140px; }
-  .clock .number3 { top: 55px; left: 170px; }
-  .clock .number4 { top: 90px; left: 180px; }
-  .clock .number5 { top: 130px; left: 170px; }
-  .clock .number6 { top: 160px; left: 140px; }
-  .clock .number7 { top: 180px; left: 90px; }
-  .clock .number8 { top: 160px; left: 40px; }
-  .clock .number9 { top: 130px; left: 10px; }
-  .clock .number10 { top: 90px; left: 0px; }
-  .clock .number11 { top: 55px; left: 10px; }
-  .clock .number12 { top: 30px; left: 40px; }
+  .number1 { top: 10px; left: 90px; }
+  .number2 { top: 20px; left: 140px; }
+  .number3 { top: 50px; left: 170px; }
+  .number4 { top: 90px; left: 140px; }
+  .number5 { top: 130px; left: 90px; }
+  .number6 { top: 160px; left: 50px; }
+  .number7 { top: 170px; left: 10px; }
+  .number8 { top: 130px; left: 10px; }
+  .number9 { top: 90px; left: 40px; }
+  .number10 { top: 50px; left: 10px; }
+  .number11 { top: 20px; left: 50px; }
+  .number12 { top: 50px; left: 90px; }
   
   .clock div {
     position: absolute;
@@ -61,4 +61,5 @@
   #days {
     margin-top: 10px;
   }
+  
   
