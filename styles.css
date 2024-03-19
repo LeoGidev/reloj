@@ -7,29 +7,51 @@
     margin: 50px auto;
   }
   
+  .clock .number {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    transform-origin: 50% 100%;
+  }
+  
+  .clock .number1 { top: 15px; left: 90px; }
+  .clock .number2 { top: 30px; left: 140px; }
+  .clock .number3 { top: 55px; left: 170px; }
+  .clock .number4 { top: 90px; left: 180px; }
+  .clock .number5 { top: 130px; left: 170px; }
+  .clock .number6 { top: 160px; left: 140px; }
+  .clock .number7 { top: 180px; left: 90px; }
+  .clock .number8 { top: 160px; left: 40px; }
+  .clock .number9 { top: 130px; left: 10px; }
+  .clock .number10 { top: 90px; left: 0px; }
+  .clock .number11 { top: 55px; left: 10px; }
+  .clock .number12 { top: 30px; left: 40px; }
+  
   .clock div {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: 50% 100%;
   }
   
   .hour-hand {
     width: 5px;
     height: 50px;
     background-color: black;
+    transform-origin: 50% 100%;
   }
   
   .minute-hand {
     width: 3px;
     height: 70px;
     background-color: black;
+    transform-origin: 50% 100%;
   }
   
   .second-hand {
     width: 1px;
     height: 80px;
     background-color: red;
+    transform-origin: 50% 100%;
   }
   
   .calendar {
@@ -39,5 +61,4 @@
   #days {
     margin-top: 10px;
   }
-  
   
