@@ -36,7 +36,7 @@
   
   .hour-hand {
     border: 1px solid rgb(255, 0, 0);
-    position: absolute;
+    
     top:50%;
     left: 50%;
     width: 5px;
@@ -47,7 +47,7 @@
   
   .minute-hand {
     border: 1px solid rgb(21, 0, 255);
-    position: absolute;
+    
     top:50%;
     left: 50%;
     width: 3px;
@@ -57,8 +57,8 @@
   }
   
   .second-hand {
-    border: 1px solid rgb(0, 255, 72);
-    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    
     top:50%;
     left: 50%;
     width: 1px;
