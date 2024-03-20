@@ -58,6 +58,62 @@ function drawHand(ctx, angle, length, width) {
 
 drawClock();
 
+function drawCalendar() {
+  const calendarDiv = document.getElementById('calendar');
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth();
+  const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+  const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+  const daysInMonth = lastDayOfMonth.getDate();
+
+  const table = document.createElement('table');
+  const tableHead = table.createTHead();
+  const tableBody = table.createTBody();
+
+  // Cabecera de la tabla
+  const daysOfWeek = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+  const headerRow = tableHead.insertRow();
+  daysOfWeek.forEach(day => {
+    const th = document.createElement('th');
+    th.textContent = day;
+    headerRow.appendChild(th);
+  });
+
+  // Cuerpo de la tabla
+  let date = 1;
+  for (let i = 0; i < 6; i++) {
+    const row = tableBody.insertRow();
+    for (let j = 0; j < 7; j++) {
+      const cell = row.insertCell();
+      if (i === 0 && j < firstDayOfMonth.getDay()) {
+        cell.textContent = '';
+      } else if (date > daysInMonth) {
+        break;
+      } else {
+        cell.textContent = date;
+        const currentDate = new Date(currentYear, currentMonth, date);
+        if (currentDate.toDateString() === today.toDateString()) {
+          cell.classList.add('today');
+        }
+        if (currentDate.getDay() === 0) {
+          cell.classList.add('sunday');
+        }
+        if (currentDate.getDay() === 1) {
+          cell.classList.add('monday');
+        }
+        date++;
+      }
+    }
+  }
+
+  calendarDiv.innerHTML = '';
+  calendarDiv.appendChild(table);
+}
+
+drawClock();
+drawCalendar();
+
 
   
   
