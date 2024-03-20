@@ -24,10 +24,10 @@
   .clock .number3 { top: 50%; left: 100%; transform: translate(-100%,-50%); }
   .clock .number4 { top: 75%; left: 84.545%; }
   .clock .number5 { top: 84.545%; left: 75%; }
-  .clock .number6 { top: 100%; left: 50%; }
+  .clock .number6 { top: 100%; left: 50%; transform: translate(-50%,-100%); }
   .clock .number7 { top: 84.545%; left: 25%; }
   .clock .number8 { top: 75%; left: 15.455%; }
-  .clock .number9 { top: 50%; left: 0%; }
+  .clock .number9 { top: 50%; left: 0%; transform: translate(-100%,-50%);}
   .clock .number10 { top: 25%; left: 15.455%; }
   .clock .number11 { top: 15.455%; left: 25%; }
 
