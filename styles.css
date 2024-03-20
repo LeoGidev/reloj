@@ -1,79 +1,13 @@
-.clock {
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: relative;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .clock .number {
-    position: absolute;
-    font-size: 12px;
-    font-weight: bold;
-    border: 1px solid black;
-    
-  }
-  
-  .clock .number12 { top: 0%; left: 50%; }
-  .clock .number1 { top: 15.455%; left: 75%; }
-  .clock .number2 { top: 25%; left: 84.545%; }
-  .clock .number3 { top: 50%; left: 100%; transform: translate(-100%,-50%); }
-  .clock .number4 { top: 75%; left: 84.545%; }
-  .clock .number5 { top: 84.545%; left: 75%; }
-  .clock .number6 { top: 100%; left: 50%; transform: translate(-50%,-100%); }
-  .clock .number7 { top: 84.545%; left: 25%; }
-  .clock .number8 { top: 75%; left: 15.455%; }
-  .clock .number9 { top: 50%; left: 0%; transform: translate(-100%,-50%);}
-  .clock .number10 { top: 25%; left: 15.455%; }
-  .clock .number11 { top: 15.455%; left: 25%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-  
-  
-  
-  .hour-hand {
-    border: 1px solid rgb(255, 0, 0);
-    
-    top:50%;
-    left: 50%;
-    width: 5px;
-    height: 50px;
-    background-color: black;
-    transform-origin: 50% 100%;
-  }
-  
-  .minute-hand {
-    border: 1px solid rgb(21, 0, 255);
-    
-    top:50%;
-    left: 50%;
-    width: 3px;
-    height: 70px;
-    background-color: black;
-    transform-origin: 50% 100%;
-  }
-  
-  .second-hand {
-    border: 1px solid rgb(0, 0, 0);
-    
-    top:50%;
-    left: 50%;
-    width: 1px;
-    height: 80px;
-    background-color: red;
-    transform-origin: 50% 100%;
-  }
-  
-  .calendar {
-    border: 1px solid black;
-    text-align: center;
-  }
-  
-  #days {
-    border: 1px solid black;
-    margin-top: 10px;
-  }
+canvas {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
   
