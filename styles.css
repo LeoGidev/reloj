@@ -21,7 +21,7 @@
   .clock .number12 { top: 0%; left: 50%; }
   .clock .number1 { top: 15.455%; left: 75%; }
   .clock .number2 { top: 25%; left: 84.545%; }
-  .clock .number3 { top: 50%; left: 100%; }
+  .clock .number3 { top: 50%; left: 100%; transform: translate(-100%,-50%); }
   .clock .number4 { top: 75%; left: 84.545%; }
   .clock .number5 { top: 84.545%; left: 75%; }
   .clock .number6 { top: 100%; left: 50%; }
