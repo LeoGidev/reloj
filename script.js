@@ -99,8 +99,8 @@ function drawCalendar() {
         if (currentDate.getDay() === 0) {
           cell.classList.add('sunday');
         }
-        if (currentDate.getDay() === 1) {
-          cell.classList.add('monday');
+        if (currentDate.getDay() === 6) {
+          cell.classList.add('saturday');
         }
         date++;
       }

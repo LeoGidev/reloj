@@ -43,14 +43,15 @@ table td {
 }
 
 .today {
-  background-color: lightblue;
+  background-color: rgb(27, 37, 40);
+  color: white;
 }
 
 .sunday {
   color: red;
 }
 
-.monday {
+.saturday {
   color: blue;
 }
 
