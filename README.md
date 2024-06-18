@@ -1,5 +1,5 @@
 # Reloj
-## Se programa a modo de práctica un snecillo reloj con calendario.
+## Se programa a modo de práctica un sencillo reloj con calendario.
 ![imagen ilustratuva](example1.png)
 
 
